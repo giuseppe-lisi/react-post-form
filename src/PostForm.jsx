@@ -1,31 +1,28 @@
-function PostForm({ data, handleChange, handleSubmit}) {
-    
+function PostForm({ data, handleChange, handleSubmit }) {
+    const fields = ["author", "title", "body"];
+
     return (
         <>
-        <form onSubmit={handleSubmit}>
-            <input
-                type="text"
-                placeholder="autore"
-                name="author"
-                value={data.author}
-                onChange={handleChange}
-            />
-            <input
-                type="text"
-                placeholder="titolo"
-                name="title"
-                value={data.title}
-                onChange={handleChange}
-            />
-            <input
-                type="text"
-                placeholder="contenuto"
-                name="body"
-                value={data.body}
-                onChange={handleChange}
-            />
-            <button type="submit">Pubblica Post</button>
-        </form>
+            <form onSubmit={handleSubmit} className="postForm">
+                <ul>
+                    {fields.map((field, i) => {
+                        return (
+                            <>
+                                <li key={i}>
+                                    <input
+                                        type="text"
+                                        placeholder={field}
+                                        name={field}
+                                        key={i}
+                                        onChange={handleChange}
+                                    />
+                                </li>
+                            </>
+                        );
+                    })}
+                </ul>
+                <button type="submit">Pubblica Post</button>
+            </form>
         </>
     );
 }
