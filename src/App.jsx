@@ -1,25 +1,24 @@
 import { useState } from "react";
+import PostForm from "./PostForm";
 
 function App() {
-
-    const [isPublic, setIsPublic] = useState("publicOrNot")
+    const [isPublic, setIsPublic] = useState("publicOrNot");
 
     const [post, setPost] = useState({
-        author : "",
-        title : "",
-        body : ""
-    })
+        author: "",
+        title: "",
+        body: "",
+    });
 
     function handleChange(e) {
-        setPost({...post, [e.target.name]: e.target.value});
+        setPost({ ...post, [e.target.name]: e.target.value });
     }
 
     return (
         <>
             <h1>Blog</h1>
-            <input type="text" placeholder="autore" name="author" onChange={ handleChange }/>
-            <input type="text" placeholder="titolo" name="title" onChange={ handleChange }/>
-            <input type="text" placeholder="contenuto" name="body" onChange={ handleChange }/>
+
+            <PostForm data={post} handleChange={handleChange}/>
 
             <h1>Post</h1>
 
