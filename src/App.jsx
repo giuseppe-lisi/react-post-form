@@ -42,7 +42,7 @@ function App() {
 
                 <h2>Crea un nuovo post!</h2>
                 <h5>Draft</h5>
-                <Post postData={post} />
+                <PostDraft postData={post} />
 
                 <hr />
 

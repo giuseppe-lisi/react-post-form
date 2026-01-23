@@ -1,4 +1,4 @@
-function Post({postData}) {
+function PostDraft({postData}) {
     return (
         <>
             <div className="postDraft">
@@ -11,4 +11,4 @@ function Post({postData}) {
     );
 }
 
-export default Post;
+export default PostDraft;
