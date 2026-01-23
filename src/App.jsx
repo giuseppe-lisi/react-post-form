@@ -40,7 +40,7 @@ function App() {
 
                 <hr />
 
-                <h2>Create a new post!</h2>
+                <h2>Create un nuovo post!</h2>
                 <h5>Draft</h5>
                 <Post postData={post} />
 
