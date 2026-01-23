@@ -5,8 +5,39 @@
     font-family: sans-serif;
 }
 
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
 h1 {
     padding-block: 20px;
+}
+
+hr {
+    border: 0.5px solid rgb(227, 227, 227);
+    margin-block: 15px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+input {
+    padding: 5px;
+}
+
+button {
+    padding: 5px;
+    margin-block: 20px;
+}
+
+.postForm {
+    border: 1px solid rgb(213, 213, 213);
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .postDraft {
@@ -16,7 +47,15 @@ h1 {
     padding: 15px;
 }
 
-hr {
-    border: 0.5px solid rgb(227, 227, 227);
-    margin-block: 5px;
+.postList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.post {
+    border: 1px solid rgb(213, 213, 213);
+    width: 30%;
+    border-radius: 5px;
+    padding: 15px;
 }
