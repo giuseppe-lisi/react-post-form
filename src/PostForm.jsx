@@ -1,4 +1,4 @@
-function PostForm({ data, handleChange, handleSubmit }) {
+function PostForm({ postData, handleChange, handleSubmit }) {
     const fields = ["author", "title", "body"];
 
     return (
@@ -21,6 +21,7 @@ function PostForm({ data, handleChange, handleSubmit }) {
                             </>
                         );
                     })}
+                    <input type="checkbox" name="isPublic" id="isPublic" />
                 </ul>
                 <button type="submit">Pubblica Post</button>
             </form>

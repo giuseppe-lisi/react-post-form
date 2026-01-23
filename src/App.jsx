@@ -1,10 +1,8 @@
 import { useState } from "react";
 import PostForm from "./PostForm";
-import Post from "./PostDraft";
+import PostDraft from "./PostDraft";
 
 function App() {
-    const [isPublic, setIsPublic] = useState("publicOrNot");
-
     const [post, setPost] = useState({
         author: "",
         title: "",
