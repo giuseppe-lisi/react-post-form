@@ -11,12 +11,7 @@ function App() {
     })
 
     function handleChange(e) {
-        const fieldName = e.target.name;
-        const fieldValue = e.target.value;
-        const newPost = {...post};
-        newPost[fieldName] = fieldValue;
-        
-        setPost(newPost);
+        setPost({...post, [e.target.name]: e.target.value});
     }
 
     return (
