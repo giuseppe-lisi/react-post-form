@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PostForm from "./PostForm";
+import Post from "./Post";
 
 function App() {
     const [isPublic, setIsPublic] = useState("publicOrNot");
@@ -36,16 +37,15 @@ function App() {
                 handleSubmit={handleSubmit}
             />
 
-            <h1>Post</h1>
-            <div className="post">
-                <h2>{post.author}</h2>
-                <hr />
-                <h4>{post.title}</h4>
-                <p>{post.body}</p>
-            </div>
+            <h1>Create a new post!</h1>
+            <Post postData={post} />
 
             <div className="postList">
-                {postList.map( card => <>{card.author}, {card.title}, {card.body}</>)}
+                {postList.map((card) => (
+                    <>
+                        {card.author}, {card.title}, {card.body}
+                    </>
+                ))}
             </div>
         </>
     );
