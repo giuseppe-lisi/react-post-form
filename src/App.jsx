@@ -28,6 +28,7 @@ function App() {
 
             <div className="card">
                 <h2>{author}</h2>
+                <hr />
                 <h4>{title}</h4>
                 <p>{body}</p>
             </div>

@@ -4,3 +4,19 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+h1 {
+    padding-block: 20px;
+}
+
+.card {
+    border: 1px solid rgb(213, 213, 213);
+    width: 30%;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+hr {
+    border: 0.5px solid rgb(227, 227, 227);
+    margin-block: 5px;
+}
