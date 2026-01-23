@@ -1,4 +1,4 @@
-function PostForm({ postData, handleChange, handleSubmit }) {
+function PostForm({ handleChange, handleSubmit }) {
     const fields = ["author", "title", "body"];
 
     return (
@@ -8,7 +8,7 @@ function PostForm({ postData, handleChange, handleSubmit }) {
                     {fields.map((field, i) => {
                         return (
                             <>
-                                <li key={i}>
+                                <li>
                                     <input
                                         type="text"
                                         placeholder={field}
@@ -21,7 +21,9 @@ function PostForm({ postData, handleChange, handleSubmit }) {
                             </>
                         );
                     })}
-                    <input type="checkbox" name="isPublic" id="isPublic" />
+
+                    <p>Public Post</p>
+                    <input type="checkbox" name="isPublic" key="isPublic" onChange={handleChange}/>
                 </ul>
                 <button type="submit">Pubblica Post</button>
             </form>
