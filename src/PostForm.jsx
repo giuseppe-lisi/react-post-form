@@ -15,6 +15,7 @@ function PostForm({ data, handleChange, handleSubmit }) {
                                         name={field}
                                         key={i}
                                         onChange={handleChange}
+                                        required
                                     />
                                 </li>
                             </>
