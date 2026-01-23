@@ -1,7 +1,4 @@
-function PostForm({ data, handleChange}) {
-    function handleSubmit(e) {
-        e.preventDefault();
-    }
+function PostForm({ data, handleChange, handleSubmit}) {
     
     return (
         <>
