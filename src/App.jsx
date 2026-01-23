@@ -10,13 +10,17 @@ function App() {
         body : "body"
     })
 
+    function handleChange() {
+        console.log("funziono");
+        
+    }
 
     return (
         <>
             <h1>Blog</h1>
-            <input placeholder="autore" onChange={ e => changeAuthor(e)}/>
-            <input placeholder="titolo" onChange={ e => changeTitle(e)}/>
-            <input placeholder="contenuto" onChange={ e => changeBody(e)}/>
+            <input placeholder="autore" onChange={ handleChange}/>
+            <input placeholder="titolo" onChange={ handleChange}/>
+            <input placeholder="contenuto" onChange={ handleChange}/>
 
             <h1>Post</h1>
 
